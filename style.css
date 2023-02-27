@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 450;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.t-icon {
+    font-size: 50px;
+    color: tomato;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 1.4px;
+    color: tomato;
+}
+
+#celcius,
+#Fahrenheit,
+#Kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0px 0px 8px;
+    padding: 0 10px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.icon {
+    flex: 1;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button button {
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background-color: black;
+    color: white;
+}
